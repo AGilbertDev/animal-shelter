@@ -1,19 +1,19 @@
-import tailwindcss from "@tailwindcss/vite"
+import tailwindcss from "@tailwindcss/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/ui'],
+  modules: ["@nuxt/eslint", "@nuxt/icon", "@nuxt/image", "@pinia/nuxt"],
   css: ["~/assets/css/main.css"],
   eslint: {
     config: {
-      standalone: false
-    }
+      standalone: false,
+    },
   },
   vite: {
     plugins: [
-      tailwindcss()
-    ]
-  }
-})
+      tailwindcss(),
+    ],
+  },
+});

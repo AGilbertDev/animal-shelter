@@ -1,0 +1,17 @@
+[
+  { "id": "4631a004-6472-4e2b-9483-7d45a4baf0a2", "name": "Kiki", "species": "Écureuil", "images": ["/images/squirrel01.jpg"], "adoptionCost": 249.54 },
+  { "id": "73ce04a5-a559-421a-993a-b93a2eabd1e8", "name": "Boris", "species": "Opossum", "images": ["/images/possum01.jpg"], "rabies": true, "adoptionCost": 249.54 },
+  { "id": "68eb4bf5-2b0f-456b-9dc6-fcc9fdb79a69", "name": "Doritos", "species": "Raton laveur", "images": ["/images/racoon02.jpg", "/images/racoon05.jpg", "/images/racoon06.jpg", "/images/racoon07.jpg", "/images/racoon08.jpg"], "adoptionCost": 249.54 },
+  { "id": "904c6313-c919-4077-b27c-28065a72fc42", "name": "Rémy", "species": "Chef Cuisinier", "images": ["/images/rat01.jpg"], "adoptionCost": 249.54 },
+  { "id": "af4576c6-f7f4-44cc-ad02-6fbe2950eaf8", "name": "Karen", "species": "Mouette", "images": ["/images/gull02.jpg"], "language": true, "adoptionCost": 249.54 },
+  { "id": "31cd93b9-01cb-4aee-b4b2-a67a26a5a287", "name": "Chicken_Killer_666", "species": "Coyote", "images": ["/images/coyote01.jpg"], "killer": true, "adoptionCost": 249.54 },
+  { "id": "213c8297-c787-4eda-a2fd-b9b61e73fcd7", "name": "Rosie", "species": "Moufette", "images": ["/images/skunk02.jpg"], "adoptionCost": 249.54 },
+  { "id": "2006675e-ea13-47eb-adf2-d3d71edcc53e", "name": "Fluffy", "species": "Raton laveur", "images": ["/images/racoon01.jpg", "/images/racoon05.jpg", "/images/racoon06.jpg", "/images/racoon07.jpg", "/images/racoon08.jpg"], "adoptionCost": 249.54 },
+  { "id": "b8f9e2d1-3c7a-4e5f-9b8d-2a1c4f6e9b7d", "name": "Félix", "species": "Rat", "images": ["/images/rat03.jpg"], "adoptionCost": 249.54 },
+  { "id": "73ce04a5-a559-421a-993a-b93a26a5a287", "name": "Croquette", "species": "Moufette", "images": ["/images/skunk01.jpg"], "adoptionCost": 249.54 },
+  { "id": "c3d8f1e2-5a9b-4c7e-8f2d-1b5a9c3e7f1b", "name": "Patate-Douce", "species": "Raton laveur", "images": ["/images/racoon03.jpg"], "adoptionCost": 249.54 },
+  { "id": "d7e4f9a2-8c1b-4d6e-9f3a-7e1c5b9d4f8a", "name": "Charles III", "species": "Vampire", "images": ["/images/bat01.jpg"], "adoptionCost": 249.54 },
+  { "id": "e5f2a8b1-9d4c-4e7f-8a2b-6f9c2e5a8b1d", "name": "Frippouille", "species": "Rat", "images": ["/images/rat02.jpg"], "adoptionCost": 249.54 },
+  { "id": "f9a6c3d2-1e8b-4f5a-9c6d-3b7e1f4a9c6b", "name": "Papa John", "species": "Raton laveur", "images": ["/images/racoon04.jpg"], "adoptionCost": 249.54 },
+  { "id": "a1b7d4e3-6f2c-4a8e-9b1d-5c8a3f6b9e2a", "name": "Patrice", "species": "Pigeon", "images": ["/images/pigeon02.jpg"], "adoptionCost": 249.54 }
+]

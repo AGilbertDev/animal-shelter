@@ -47,9 +47,9 @@ shippingCost.value = SHIPPING_COST;
             </div>
             <span class="text-3xl font-bold text-center">{{ animal.name }}</span>
           </div>
-          <div class="w-[480px] h-[480px] object-cover">
+          <div class="w-[480px] h-[480px] overflow-hidden">
             <NuxtImg
-              class="rounded-xl"
+              class="w-full h-full object-cover rounded-xl"
               :src="animal.images[0]"
               :alt="animal.name"
               width="480"
@@ -61,9 +61,9 @@ shippingCost.value = SHIPPING_COST;
               v-for="image in images"
               :key="image"
             >
-              <div class="w-[96px] h-[96px] object-cover">
+              <div class="w-[96px] h-[96px] overflow-hidden">
                 <NuxtImg
-                  class="rounded-lg"
+                  class="w-full h-full object-cover rounded-lg"
                   :src="image"
                   :alt="animal.name"
                   width="96"
@@ -90,14 +90,15 @@ shippingCost.value = SHIPPING_COST;
           <span class="text-lg font-bold">Ajouter des extras:</span>
           <!-- Sacs de nourriture -->
           <div class="flex gap-4">
-            <NuxtImg
-              src="/images/food.jpg"
-              alt="Sacs de nourriture"
-              class="rounded-lg"
-              width="96"
-              height="96"
-              fit="fill"
-            />
+            <div class="w-[96px] h-[96px] overflow-hidden">
+              <NuxtImg
+                src="/images/food.jpg"
+                alt="Sacs de nourriture"
+                class="w-full h-full object-cover rounded-lg"
+                width="96"
+                height="96"
+              />
+            </div>
             <label class="label gap-4 text-black text-lg flex-1 justify-between"><span>Sacs de nourriture ({{ FOOD_COST.toFixed(2) }} $):</span>
               <input
                 v-model="numFoodBags"
@@ -112,14 +113,15 @@ shippingCost.value = SHIPPING_COST;
           </div>
           <!-- Litière -->
           <div class="flex gap-4">
-            <NuxtImg
-              src="/images/litter.jpg"
-              alt="Sacs de nourriture"
-              class="rounded-lg"
-              width="96"
-              height="96"
-              fit="fill"
-            />
+            <div class="w-[96px] h-[96px] overflow-hidden">
+              <NuxtImg
+                src="/images/litter.jpg"
+                alt="Litière"
+                class="w-full h-full object-cover rounded-lg"
+                width="96"
+                height="96"
+              />
+            </div>
             <label class="label gap-4 text-black text-lg flex-1 justify-between"><span>Litière ({{ LITTER_COST.toFixed(2) }} $):</span>
               <input
                 v-model="isLitterSelected"
@@ -130,14 +132,15 @@ shippingCost.value = SHIPPING_COST;
           </div>
           <!-- Jouets -->
           <div class="flex gap-4">
-            <NuxtImg
-              src="/images/toy.jpg"
-              alt="Sacs de nourriture"
-              class="rounded-lg"
-              width="96"
-              height="96"
-              fit="fill"
-            />
+            <div class="w-[96px] h-[96px] overflow-hidden">
+              <NuxtImg
+                src="/images/toy.jpg"
+                alt="Jouets"
+                class="w-full h-full object-cover rounded-lg"
+                width="96"
+                height="96"
+              />
+            </div>
             <label class="label gap-4 text-black text-lg flex-1 justify-between"><span>Jouets ({{ TOY_COST.toFixed(2) }} $):</span>
               <input
                 v-model="isToySelected"

@@ -10,13 +10,13 @@ import animals from "~/lib/data.json";
       :to="`/animal/${animal.id}`"
       class="card bg-white shadow-lg max-w-[300px] mx-auto hover:scale-105 transition-all duration-300"
     >
-      <figure class="relative aspect-square overflow-hidden w-[300px] h-[300px] mx-auto">
+      <figure class="relative  overflow-hidden w-[300px] h-[300px] mx-auto">
         <div v-if="animal.rabies" class="flex absolute top-2 right-2 p-4 badge badge-warning text-lg">
           <Icon
             name="tabler:vaccine"
             size="24"
           />
-          Rage
+          A la rage
         </div>
         <div v-if="animal.language" class="flex absolute top-2 right-2 p-4 badge badge-warning text-lg">
           <Icon
@@ -33,7 +33,7 @@ import animals from "~/lib/data.json";
           A déjà tué
         </div>
         <NuxtImg
-          class="w-full h-full"
+          class="w-full h-full aspect-square"
           :src="animal.images[0]"
           :alt="animal.name"
           fit="cover"

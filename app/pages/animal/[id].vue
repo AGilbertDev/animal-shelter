@@ -47,27 +47,29 @@ shippingCost.value = SHIPPING_COST;
             </div>
             <span class="text-3xl font-bold text-center">{{ animal.name }}</span>
           </div>
-          <NuxtImg
-            class="rounded-xl"
-            :src="animal.images[0]"
-            :alt="animal.name"
-            fit="cover"
-            width="480"
-            height="480"
-          />
+          <div class="w-[480px] h-[480px] object-cover">
+            <NuxtImg
+              class="rounded-xl"
+              :src="animal.images[0]"
+              :alt="animal.name"
+              width="480"
+              height="480"
+            />
+          </div>
           <div class="flex gap-8">
             <div
               v-for="image in images"
               :key="image"
             >
-              <NuxtImg
-                class="rounded-lg"
-                :src="image"
-                :alt="animal.name"
-                fit="cover"
-                width="96"
-                height="96"
-              />
+              <div class="w-[96px] h-[96px] object-cover">
+                <NuxtImg
+                  class="rounded-lg"
+                  :src="image"
+                  :alt="animal.name"
+                  width="96"
+                  height="96"
+                />
+              </div>
             </div>
           </div>
         </div>

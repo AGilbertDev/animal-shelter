@@ -39,7 +39,6 @@ import animals from "~/lib/data.json";
           height="300"
           width="300"
           format="webp"
-          densitis="x1 x2"
           loading="lazy"
           preload
           :modifiers="{ roundCorner: '0:100' }"

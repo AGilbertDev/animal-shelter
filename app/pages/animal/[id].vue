@@ -1,5 +1,5 @@
 <script setup>
-import { Decimal } from "decimal.js/decimal";
+import { Decimal } from "decimal.js";
 
 import animals from "~/lib/data.json";
 
@@ -31,7 +31,7 @@ shippingCost.value = SHIPPING_COST;
         name="tabler:error"
         size="24"
       />
-      <span>POSTES CANADA : En raison du risque de grève, nous ne garantissons pas que votre animal sera encore en bonne santé quand vous le recevrez.</span>
+      <span>POSTES CANADA : En raison du risque de grève, nous ne garantissons pas que vous recevrez votre animal dans le même état que nous l'avons envoyé.</span>
     </div>
 
     <div class="container card mx-auto my-8 shadow-lg bg-white ">

@@ -1,4 +1,4 @@
-import { Decimal } from "decimal.js/decimal"; // Évite les erreurs de précision lors de calculs avec des nombre réels.
+import { Decimal } from "decimal.js"; // Évite les erreurs de précision lors de calculs avec des nombre réels.
 
 // Constantes des prix
 const FOOD_COST = Decimal(10);

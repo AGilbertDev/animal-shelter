@@ -38,7 +38,15 @@ shippingCost.value = SHIPPING_COST;
       <div class="grid grid-cols-1 md:grid-cols-3 card-body justify-center">
         <!-- Images -->
         <div class="flex flex-col p-8 gap-4 mx-auto justify-between">
-          <span class="text-3xl font-bold text-center">{{ animal.name }}</span>
+          <div class="flex items-center justify-center gap-4 relative">
+            <div class="absolute top-0 left-0 btn btn-outline rounded-full w-10 h-10 p-0" @click="navigateTo({ name: 'list' })">
+              <Icon
+                name="tabler:arrow-left"
+                size="24"
+              />
+            </div>
+            <span class="text-3xl font-bold text-center">{{ animal.name }}</span>
+          </div>
           <NuxtImg
             class="rounded-xl"
             :src="animal.images[0]"

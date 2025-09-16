@@ -33,12 +33,11 @@ import animals from "~/lib/data.json";
           A déjà tué
         </div>
         <NuxtImg
-          class="w-full h-full "
+          class="w-full h-full object-cover"
           :src="animal.images[0]"
           :alt="animal.name"
-          fit="cover"
-          width="480"
-          height="480"
+          height="300"
+          width="300"
           format="webp"
           densitis="x1 x2"
           loading="lazy"

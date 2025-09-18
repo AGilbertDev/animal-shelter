@@ -1,11 +1,11 @@
-import { Decimal } from "decimal.js"; // Évite les erreurs de précision lors de calculs avec des nombre réels.
+import Decimal from "decimal.js"; // Évite les erreurs de précision lors de calculs avec des nombre réels.
 
 // Constantes des prix
-const FOOD_COST = Decimal(10);
-const LITTER_COST = Decimal(34.99);
-const TOY_COST = Decimal(8.99);
-const TPS_RATE = Decimal(0.05);
-const TVQ_RATE = Decimal(0.09975);
+const FOOD_COST = Decimal(10); // Prix d'un sac de nourriture en dollars
+const LITTER_COST = Decimal(34.99); // Prix d'une litière en dollars
+const TOY_COST = Decimal(8.99); // Prix d'un jouet en dollars
+const TPS_RATE = Decimal(0.05); // Pourcentage de la taxe fédérale
+const TVQ_RATE = Decimal(0.09975); // Pourcentage de la taxe provinciale
 
 /**
  * Calcule le sous-total de la commande
@@ -18,15 +18,12 @@ const TVQ_RATE = Decimal(0.09975);
  */
 function calculateSubTotal(adoptionCost: number, shippingCost: number, numFoodBags: number, isLitterSelected: boolean, isToySelected: boolean): number {
   // 1. Validation des paramètres
-
-  // **Avec Typescript, les types des paramètres sont déjà validés par la fonction.**
-
-  // Les coûts et les quantités doivent être positifs
+  // Les coûts et les quantités doivent être des nombres
   if (Number(adoptionCost) < 0
     || Number(shippingCost) < 0
     || Number(numFoodBags) < 0
   ) {
-    throw new TypeError("Les coûts et les quantités doivent être des nombres positifs.");
+    throw new TypeError("Les coûts et les quantités doivent être des nombres positifs");
   }
 
   // 2. Calcul du sous-total
@@ -75,7 +72,8 @@ function calculateTotal(subTotal: number, taxes: { tps: number; tvq: number }): 
   // 1. Validation des paramètres
 
   // Les taxes doivent être positifs
-  if (Number(subTotal) < 0 || Number(taxes.tps) < 0 || Number(taxes.tvq) < 0) {
+  if (
+    Number(subTotal) < 0 || Number(taxes.tps) < 0 || Number(taxes.tvq) < 0) {
     throw new TypeError("Le sous-total et les taxes doivent être des nombres positifs.");
   }
 

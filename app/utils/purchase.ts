@@ -4,6 +4,8 @@ import Decimal from "decimal.js"; // Évite les erreurs de précision lors de ca
 const FOOD_COST = Decimal(10); // Prix d'un sac de nourriture en dollars
 const LITTER_COST = Decimal(34.99); // Prix d'une litière en dollars
 const TOY_COST = Decimal(8.99); // Prix d'un jouet en dollars
+
+// Pourcentages de taxes
 const TPS_RATE = Decimal(0.05); // Pourcentage de la taxe fédérale
 const TVQ_RATE = Decimal(0.09975); // Pourcentage de la taxe provinciale
 
@@ -23,7 +25,7 @@ function calculateSubTotal(adoptionCost: number, shippingCost: number, numFoodBa
     || Number(shippingCost) < 0
     || Number(numFoodBags) < 0
   ) {
-    throw new TypeError("Les coûts et les quantités doivent être des nombres positifs");
+    throw new TypeError("Les coûts et les quantités doivent être des nombres positifs.");
   }
 
   // 2. Calcul du sous-total

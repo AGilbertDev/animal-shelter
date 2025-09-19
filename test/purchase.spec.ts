@@ -25,7 +25,7 @@ describe("la fonction calculateSubTotal()", () => {
 
   // Cas: Résultat arrondi à 2 décimales (échoue car on garde toutes les décimales)
   it.skip("retourne le sous-total arrondi à 2 décimales", () => {
-    const resultat = calculateSubTotal(123.456789, 45.6789, 0, false, false); // Donne 169.14
+    const resultat = calculateSubTotal(123.45678911111111, 45.6789, 0, false, false); // Donne 169.14
     // Ajouter l'assertion.
     assert.strictEqual(resultat, 169.14, "Le résultat doit être égal à 169.14");
   });
